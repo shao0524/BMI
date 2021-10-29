@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><h1><a href="#"></a></h1></div>
+            <div class="input-group">
+                <div class="input">
+                    <label>身高cm</label>
+                    <input type="text" placeholder="請輸入身高" id="heightId">
+                </div>
+                <div class="input">
+                    <label>體重kg</label>
+                    <input type="text" placeholder="請輸入體重" id="weightId">
+                </div>
+            </div>
+        
+            <div class="count">
+                <input type="button" value="看結果" id="countBtnId" >
+                <a href="#" class="retry">retry</a>
+                <span class="bmiTag">BMI</span>
+                <span class="stateTag"></span>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>BMI 紀錄</h1>
+            <ul class="bmiList"></ul>
+        </div>
+
+        <div class="footer">
+            <img src="https://i.imgur.com/L7O4LGs.png" alt="footerLogo">
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: SFNSDisplay;
+}
+.header{
+    height: 300px;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header .logo{
+    margin-right: 100px;
+    
+}
+.header .logo h1{
+ float:left;
+}
+.header .logo a{
+    width: 120px;
+    height: 120px;
+    background-image: url('https://a94s84.github.io/JS-final-BMI/img/BMICLogo.png');
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    color:white;
+}
+.input-group{
+    margin-right: 100px;
+}
+.input label{
+    display: block;
+    margin-top:10px;
+    margin-bottom: 10px;
+    color:#FFD366;
+
+}
+.input #heightId,#weightId{
+    background-color:rgb(255,255,255,0.18);
+    border-radius: 5px;
+    border:1px solid #FFD366 ;
+    font-size:24px;
+    color: rgba(255,255,255,0.5);
+    
+    padding-left: 10px;
+}
+::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.count{
+    position: relative;
+}
+ #countBtnId{
+    z-index: 5;
+    height: 120px;
+    width: 120px;
+    background-color:#FFD366 ;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 1s all;
+}
+#countBtnId:hover{
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+}
+#countBtnId:active{
+    background: #DEA821;
+}
+.retry {
+    background:url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_loop.png) no-repeat;
+    position: absolute;
+    display: none;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    bottom: 10px;
+    right:5px;
+    z-index: 10;
+    text-indent: 101%;
+    overflow: hidden;
+    background-position:center;
+}
+.bmiTag{
+    display: none; 
+    position: absolute;
+    color:white;
+    font-size: 12px;
+    left:50px;
+    bottom: 35px;
+    z-index: 11;
+}   
+.stateTag{
+    display: none;
+    position: absolute;
+    white-space:nowrap;
+    color:white;
+    font-size: 28px;
+    left:130px;
+    bottom: 50px;
+    z-index: 12;
+
+
+}
+
+/* content */
+.content {
+    margin: 0 auto;
+    text-align: center;
+    min-height: calc(100vh - 408px);
+}
+.content h1{
+    font-size: 36px;
+    padding:50px 0;
+
+}
+.bmiList{
+    margin:0 auto;
+    width: 700px;
+}
+.bmiList>li{
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.colorBox{
+    width: 10px;
+}
+
+.record{
+    display: flex;
+    align-items: center;
+}
+.record>li{
+  text-align: left;
+  margin-left: 10px;
+  width: 100px;
+  font-weight: bolder;
+}
+
+.smallSize{
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.delBtn {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid red;
+    background-color:red ;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.footer{
+    text-align: center;
+    background-color:#FFD366; 
+}
+.footer img{
+    margin: 25px 0;
+}
